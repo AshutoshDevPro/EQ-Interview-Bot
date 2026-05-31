@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist
+docs
+.git
+.vscode
+*.md
+*.log
+python-service/.venv
+python-service/__pycache__
+**/__pycache__
+**/*.pyc
+**/*.pyo

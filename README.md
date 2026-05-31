@@ -85,6 +85,25 @@ python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 The service starts at `http://localhost:8000`.
 
+## Docker Deployment
+
+You can run the full stack with Docker and Docker Compose.
+
+1. Copy `.env.example` to `.env` and fill in your secrets.
+2. Build and start the services:
+
+```powershell
+docker compose up --build
+```
+
+3. Open the app at `http://localhost:5000`.
+
+The compose setup runs:
+- `web` on port `5000`
+- `python` on port `8000`
+
+If you need a production-ready deployment host, this Docker setup can be used on any container platform that supports Docker Compose or multi-container deployment.
+
 ## Available npm Scripts
 
 - `npm run dev` – Start backend + frontend in development mode
