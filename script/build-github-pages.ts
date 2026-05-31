@@ -2,7 +2,7 @@ import { build as viteBuild } from "vite";
 import path from "path";
 
 async function buildPages() {
-  process.env.VITE_BASE_URL = process.env.VITE_BASE_URL || "/Interview-Coach-AI/";
+  process.env.VITE_BASE_URL = process.env.VITE_BASE_URL || "/EQ-Interview-Bot/";
 
   console.log("Building site for GitHub Pages...");
 
